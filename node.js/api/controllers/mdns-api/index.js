@@ -24,7 +24,7 @@ exports.handler = async (event, context, callback) => {
 
 		var list = [];
 		browser.on('serviceUp', (service) =>{
-			console.log(service);
+//			console.log(service);
 			var item = {
 				name: service.name,
 				address: service.addresses,
