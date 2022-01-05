@@ -15,7 +15,7 @@ exports.handler = async (event, context, callback) => {
 		var serviceType;
 		if( protocol == 'tcp')
 			serviceType = mdns.tcp(body.servicetype);
-		else if( serviceType == 'udp' )
+		else if( protocol == 'udp' )
 			serviceType = mdns.udp(body.servicetype);
 		else
 			throw 'unknown protocol';
